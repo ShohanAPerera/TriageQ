@@ -17,6 +17,7 @@ import TVDisplay from './pages/TVDisplay';
 import PatientCareHub from './pages/PatientCareHub';
 import InvoiceView from './pages/InvoiceView';
 import PrescriptionView from './pages/PrescriptionView';
+import About from './pages/About';
 import { seedDemoData } from './services/store';
 import { useAuth } from './services/authStore';
 
@@ -44,6 +45,7 @@ function AppRoutes() {
         <Route path="/care-hub" element={<PatientCareHub />} />
         <Route path="/invoice/:id" element={<InvoiceView />} />
         <Route path="/prescription/:id" element={<PrescriptionView />} />
+        <Route path="/about"    element={<About />} />
         <Route path="/user-register" element={<UserRegister />} />
         <Route path="*"         element={<Navigate to="/" replace />} />
       </Routes>

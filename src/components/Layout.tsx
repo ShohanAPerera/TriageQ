@@ -14,6 +14,7 @@ import {
   ShieldCheck,
   MonitorPlay,
   Stethoscope,
+  Info,
 } from 'lucide-react';
 import { cn } from '../utils/cn';
 import { useAuth, logoutUser } from '../services/authStore';
@@ -26,6 +27,7 @@ const navItems = [
   { to: '/history',   label: 'History',       icon: Clock },
   { to: '/reports',   label: 'Reports',       icon: BarChart3 },
   { to: '/ds-demo',   label: 'DS Visualizer', icon: Database },
+  { to: '/about',     label: 'About',         icon: Info },
   { to: '/tv',        label: 'Launch TV',     icon: MonitorPlay },
 ];
 
